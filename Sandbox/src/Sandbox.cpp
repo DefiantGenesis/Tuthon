@@ -1,12 +1,20 @@
+#include <Tuthon.h>
 
-namespace Tuthon {
-	__declspec(dllimport) void print();
-
-}
-
-int main() {
-	Tuthon::print();
+class Sandbox : public Tuthon::Application {
+public:
+	Sandbox() {
 	
+	}
+	~Sandbox() {
 	
-	return 0;
+	}
+
+
+
+};
+
+Tuthon::Application* Tuthon::CreateApplication() {
+
+	return new Sandbox();
+
 }

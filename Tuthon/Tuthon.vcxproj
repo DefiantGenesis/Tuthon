@@ -10,6 +10,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Tuthon.h" />
+    <ClInclude Include="src\Tuthon\Application.h" />
+    <ClInclude Include="src\Tuthon\Core.h" />
+    <ClInclude Include="src\Tuthon\EntryPoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Tuthon\Application.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{A4DEC396-82EB-47FB-B1D7-B4234228A949}</ProjectGuid>
@@ -58,6 +67,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>TN_PLATFORM_WINDOWS;TN_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <PostBuildEvent>
       <Command>copy $(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\$(ProjectName).dll $(SolutionDir)bin\$(Configuration)-$(Platform)\Sandbox\</Command>
@@ -71,6 +81,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>TN_PLATFORM_WINDOWS;TN_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -80,12 +91,6 @@
       <Command>copy $(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\$(ProjectName).dll $(SolutionDir)bin\$(Configuration)-$(Platform)\Sandbox\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="src\test.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\test.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
