@@ -1,0 +1,3 @@
+[submodule "Tuthon/vendor/spdlog"]
+	path = Tuthon/vendor/spdlog
+	url = https://github.com/gabime/spdlog
