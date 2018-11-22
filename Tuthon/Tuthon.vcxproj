@@ -18,12 +18,14 @@
     <ClInclude Include="src\Tuthon\Core.h" />
     <ClInclude Include="src\Tuthon\EntryPoint.h" />
     <ClInclude Include="src\Tuthon\Window.h" />
+    <ClInclude Include="src\Tuthon\Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Tuthon\Engine.cpp" />
     <ClCompile Include="src\Tuthon\Log.cpp" />
     <ClCompile Include="src\Tuthon\Application.cpp" />
     <ClCompile Include="src\Tuthon\Window.cpp" />
+    <ClCompile Include="src\Tuthon\Transform.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -73,8 +75,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PreprocessorDefinitions>TN_PLATFORM_WINDOWS;TN_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Tuthon\vendor\spdlog\include;$(SolutionDir)Tuthon\vendor\GLFW\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLM_ENABLE_EXPERIMENTAL;TN_PLATFORM_WINDOWS;TN_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Tuthon\vendor\spdlog\include;$(SolutionDir)Tuthon\vendor\GLFW\include;$(SolutionDir)Tuthon\vendor\glm;</AdditionalIncludeDirectories>
     </ClCompile>
     <PostBuildEvent>
       <Command>copy $(SolutionDir)bin\$(Configuration)-$(Platform)\$(ProjectName)\$(ProjectName).dll $(SolutionDir)bin\$(Configuration)-$(Platform)\Sandbox\</Command>
