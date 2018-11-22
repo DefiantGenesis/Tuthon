@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Tuthon\Engine.h" />
     <ClInclude Include="src\Tuthon\Log.h" />
     <ClInclude Include="src\Tuthon.h" />
     <ClInclude Include="src\Tuthon\Application.h" />
@@ -18,6 +19,7 @@
     <ClInclude Include="src\Tuthon\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Tuthon\Engine.cpp" />
     <ClCompile Include="src\Tuthon\Log.cpp" />
     <ClCompile Include="src\Tuthon\Application.cpp" />
   </ItemGroup>
