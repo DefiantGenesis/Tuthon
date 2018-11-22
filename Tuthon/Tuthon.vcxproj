@@ -17,11 +17,13 @@
     <ClInclude Include="src\Tuthon\Application.h" />
     <ClInclude Include="src\Tuthon\Core.h" />
     <ClInclude Include="src\Tuthon\EntryPoint.h" />
+    <ClInclude Include="src\Tuthon\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Tuthon\Engine.cpp" />
     <ClCompile Include="src\Tuthon\Log.cpp" />
     <ClCompile Include="src\Tuthon\Application.cpp" />
+    <ClCompile Include="src\Tuthon\Window.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

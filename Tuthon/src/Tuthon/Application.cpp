@@ -2,8 +2,10 @@
 
 namespace Tuthon {
 
-	Application::Application()
-	{
+	Application::Application(unsigned int width, unsigned int height, std::string Title){
+
+		window = new Window(width, height, Title);
+
 	}
 
 
@@ -12,7 +14,11 @@ namespace Tuthon {
 	}
 
 	void Application::Run() {
-		while (true);
+		while (!window->IsWindowClosing()) {
+		
+			window->Update();
+
+		}
 	
 	}
 

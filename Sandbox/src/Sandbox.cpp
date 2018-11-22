@@ -2,7 +2,8 @@
 
 class Sandbox : public Tuthon::Application {
 public:
-	Sandbox() {
+	Sandbox() 
+	: Application(800, 600, "Stuff"){
 	
 	}
 	~Sandbox() {
