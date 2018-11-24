@@ -57,7 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>TN_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Tuthon\src;$(SolutionDir)Tuthon\vendor\spdlog\include;$(SolutionDir)Tuthon\vendor\GLFW\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Tuthon\src;$(SolutionDir)Tuthon\vendor\spdlog\include;$(SolutionDir)Tuthon\vendor\GLFW\include;$(SolutionDir)Tuthon\vendor\GLEW\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -69,7 +69,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>TN_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Tuthon\src;$(SolutionDir)Tuthon\vendor\spdlog\include;$(SolutionDir)Tuthon\vendor\GLFW\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Tuthon\src;$(SolutionDir)Tuthon\vendor\spdlog\include;$(SolutionDir)Tuthon\vendor\GLFW\include;$(SolutionDir)Tuthon\vendor\GLEW\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

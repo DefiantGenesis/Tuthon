@@ -1,4 +1,5 @@
 #include "Window.h"
+#include "Log.h"
 
 namespace Tuthon {
 
@@ -14,7 +15,14 @@ namespace Tuthon {
 		}
 
 		/* Make the window's context current */
-		glfwMakeContextCurrent(window);		
+		glfwMakeContextCurrent(window);	
+		GLenum err = glewInit();
+		if (GLEW_OK != err) {
+			
+			TN_CORE_FATAL("Failed to Initialize GLEW!!!!!");
+			return;
+			
+		}
 	}
 
 
@@ -23,7 +31,10 @@ namespace Tuthon {
 	}
 	
 	void Window::Update() {
-	
+		
+		unsigned int temp;
+		glGenBuffers(1,&temp);
+
 		/* Render here */
 		glClear(GL_COLOR_BUFFER_BIT);
 
